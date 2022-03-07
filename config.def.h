@@ -14,9 +14,9 @@ static const char *fonts[]          = { "monospace:size=12",
 static const char dmenufont[]       = "monospace:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
+static const char col_gray3[]       = "#ffffff";
 static const char col_gray4[]       = "#ffffff";
-static const char col_cyan[]        = "#37474F";
+static const char col_cyan[]        = "#4f4537";
 static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
@@ -84,8 +84,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = pic} },
 	{ MODKEY,                       XK_Down,   spawn,          {.v = lightdown} },
 	{ MODKEY,                       XK_Up,     spawn,          {.v = lightup} },
-	{ MODKEY,                       XK_F11,    spawn,          {.v = voldown} },
-	{ MODKEY,                       XK_F12,    spawn,          {.v = volup} },
+	{ MODKEY,                       XK_Left,    spawn,          {.v = voldown} },
+	{ MODKEY,                       XK_Right,    spawn,          {.v = volup} },
 	{ MODKEY,                       XK_F10,    spawn,          {.v = voltoggle} },
 	{ MODKEY,                       XK_q,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
