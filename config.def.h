@@ -78,9 +78,11 @@ static const char *voltoggle[]  = { "/home/mosquito/Downloads/dwm/sh/voltoggle.s
 static const char *lightdown[]  = { "/home/mosquito/Downloads/dwm/sh/lightdown.sh", NULL };
 static const char *lightup[]  = { "/home/mosquito/Downloads/dwm/sh/lightup.sh", NULL };
 static const char *pic[] = {"/home/mosquito/Downloads/dwm/sh/pic.sh", NULL};
+static const char *trayer[] = {"/home/mosquito/Downloads/dwm/sh/trayer.sh", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY|ShiftMask,             XK_Up,     spawn,          {.v = trayer} },
 	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = pic} },
 	{ MODKEY,                       XK_Down,   spawn,          {.v = lightdown} },
 	{ MODKEY,                       XK_Up,     spawn,          {.v = lightup} },
