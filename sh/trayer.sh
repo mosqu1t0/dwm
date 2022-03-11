@@ -2,5 +2,5 @@
 killall trayer
 if [ $? != 0 ];
 then
-trayer --edge right --widthtype percent --width 13 --heighttype percent --height 40 --transparent true --alpha 30 --tint 0x002c323b &
+trayer --edge bottom --widthtype percent --width 10 --align center --heighttype percent --height 40 --transparent true --alpha 30 --iconspacing 10&
 fi
