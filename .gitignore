@@ -5,3 +5,4 @@ util.o
 config.h
 config.h
 GPUCache
+dwm
