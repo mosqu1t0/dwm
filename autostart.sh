@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#
+/home/mosquito/Software/dwm/sh/dwm_status.sh
 # app autostart
 feh --bg-fill /home/mosquito/Pictures/wall.jpg
 picom &
