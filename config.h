@@ -31,7 +31,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "C", "D", "E", "F", "G", "A", "B", "", "ﬄ" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -73,13 +73,13 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 static const char *slock[]  = { "slock", NULL };
-static const char *voldown[]  = { "/home/mosquito/Downloads/dwm/sh/voldown.sh", NULL };
-static const char *volup[]  = { "/home/mosquito/Downloads/dwm/sh/volup.sh", NULL };
-static const char *voltoggle[]  = { "/home/mosquito/Downloads/dwm/sh/voltoggle.sh", NULL };
-static const char *lightdown[]  = { "/home/mosquito/Downloads/dwm/sh/lightdown.sh", NULL };
-static const char *lightup[]  = { "/home/mosquito/Downloads/dwm/sh/lightup.sh", NULL };
+static const char *voldown[]  = { "/home/mosquito/Software/dwm/sh/voldown.sh", NULL };
+static const char *volup[]  = { "/home/mosquito/Software/dwm/sh/volup.sh", NULL };
+static const char *voltoggle[]  = { "/home/mosquito/Software/dwm/sh/voltoggle.sh", NULL };
+static const char *lightdown[]  = { "/home/mosquito/Software/dwm/sh/lightdown.sh", NULL };
+static const char *lightup[]  = { "/home/mosquito/Software/dwm/sh/lightup.sh", NULL };
+static const char *trayer[] = {"/home/mosquito/Software/dwm/sh/trayer.sh", NULL};
 static const char *pic[] = {"flameshot", "gui", NULL};
-static const char *trayer[] = {"/home/mosquito/Downloads/dwm/sh/trayer.sh", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */

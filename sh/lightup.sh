@@ -1,2 +1,2 @@
 #!/bin/bash
-xbacklight -inc 5
+light -A 15
