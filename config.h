@@ -11,7 +11,7 @@ static const Bool viewontag         = True;     /* Switch view on tag switch */
 static const char *fonts[]          = { "DejaVu Sans Mono:style=Regular:size=12",
 					"WenQuanYi Micro Hei Mono:size=12:type=Regular:antialias=true:autohint=true",
 					"Symbols Nerd Font:pixelsize=20:type=1000-em:antialias=true:autohint=true"};
-static const char dmenufont[]       = "JetBrainsMono Nerd Font Mono:style=Medium,Regular:size=13";
+static const char dmenufont[]       = "DejaVu Sans Mono:style=Regular:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
