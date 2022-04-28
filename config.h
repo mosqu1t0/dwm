@@ -31,7 +31,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "C", "D", "E", "F", "G", "A", "B", "", "ﬄ" };
+static const char *tags[] = { "C", "D", "E", "F", "G", "A", "B", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -39,6 +39,7 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
+	{ "panel",    NULL,       NULL,       0,            1,           -1 },
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "flameshot",NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
