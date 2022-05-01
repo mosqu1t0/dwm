@@ -1,6 +1,6 @@
 #!/bin/bash
 
-/home/mosquito/Software/dwm/sh/trayer.sh &
+#/home/mosquito/Software/dwm/sh/trayer.sh &
 rx_pre=$(cat /proc/net/dev | grep wlan0 | awk -F' ' '{print $2}'
 313759)
 tx_pre=$(cat /proc/net/dev | grep wlan0 | awk -F' ' '{print $10}'
