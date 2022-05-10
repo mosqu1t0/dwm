@@ -41,7 +41,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "panel",    NULL,       NULL,       0,            1,           -1 },
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "jetbrains-idea",     NULL,       NULL,       0,            1,           -1 },
+	{ "jetbrains-idea",     NULL,       NULL,       0,            0,           -1 },
 	{ "flameshot",NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
 };
@@ -85,53 +85,54 @@ static const char *pic[] = {"flameshot", "gui", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY|ShiftMask,             XK_Up,     spawn,          {.v = trayer} },
-	{ MODKEY|ShiftMask,             XK_a,      spawn,          {.v = pic} },
-	{ MODKEY,                       XK_Down,   spawn,          {.v = lightdown} },
-	{ MODKEY,                       XK_Up,     spawn,          {.v = lightup} },
-	{ MODKEY,                       XK_Left,   spawn,          {.v = voldown} },
-	{ MODKEY,                       XK_Right,  spawn,          {.v = volup} },
-	{ MODKEY|ShiftMask,             XK_Left,   spawn,          {.v = voltoggle} },
-	{ MODKEY,                       XK_q,      spawn,          {.v = dmenucmd } },
-	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
-	{ MODKEY|ShiftMask,             XK_l,      spawn,          {.v = slock } },
-	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_n,      focusstack,     {.i = +1 } },
-	{ MODKEY,                       XK_e,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_k,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_m,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_i,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
-	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_v,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY|ShiftMask,             XK_f,      fullscreen,     {0} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
-	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
-	{ MODKEY,                       XK_comma,  focusmon,       {.i = -1 } },
-	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_n,      rotatetags,     {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_e,      rotatetags,     {.i = +1 } },
-	{ MODKEY,                       XK_minus,  setgaps,        {.i = -1 } },
-	{ MODKEY,                       XK_equal,  setgaps,        {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
-	TAGKEYS(                        XK_4,                      3)
-	TAGKEYS(                        XK_5,                      4)
-	TAGKEYS(                        XK_6,                      5)
-	TAGKEYS(                        XK_7,                      6)
-	TAGKEYS(                        XK_8,                      7)
-	TAGKEYS(                        XK_9,                      8)
-	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
+	{ MODKEY|ShiftMask,             111,       spawn,          {.v = trayer} },//up
+	{ MODKEY|ShiftMask,             38,        spawn,          {.v = pic} },//a
+	{ MODKEY,                       116,       spawn,          {.v = lightdown} },//down
+	{ MODKEY,                       111,       spawn,          {.v = lightup} },//up
+	{ MODKEY,                       113,       spawn,          {.v = voldown} },//left
+	{ MODKEY,                       114,       spawn,          {.v = volup} },//right
+	{ MODKEY|ShiftMask,             113,       spawn,          {.v = voltoggle} },//left
+	{ MODKEY,                       24,        spawn,          {.v = dmenucmd } },//q
+	{ MODKEY|ShiftMask,             36,        spawn,          {.v = termcmd } },//return
+	{ MODKEY|ShiftMask,             30,        spawn,          {.v = slock } },//l
+	{ MODKEY,                       56,        togglebar,      {0} },//b
+	{ MODKEY,                       44,        focusstack,     {.i = +1 } },//n
+	{ MODKEY,                       45,        focusstack,     {.i = -1 } },//e
+	{ MODKEY,                       57,        incnmaster,     {.i = +1 } },//k
+	{ MODKEY,                       58,        incnmaster,     {.i = -1 } },//m
+	{ MODKEY,                       43,        setmfact,       {.f = -0.05} },//h
+	{ MODKEY,                       46,        setmfact,       {.f = +0.05} },//i
+	{ MODKEY,                       36,        zoom,           {0} },//return
+	{ MODKEY,                       23,        view,           {0} },//tab
+	{ MODKEY|ShiftMask,             54,        killclient,     {0} },//c
+	{ MODKEY,                       41,        setlayout,      {.v = &layouts[0]} },//t
+	{ MODKEY,                       26,        setlayout,      {.v = &layouts[1]} },//f
+	{ MODKEY,                       55,        setlayout,      {.v = &layouts[2]} },//v
+	{ MODKEY|ShiftMask,             26,        fullscreen,     {0} },//f
+	{ MODKEY,                       65,        setlayout,      {0} },
+	{ MODKEY|ShiftMask,             65,        togglefloating, {0} },//space
+	{ MODKEY,                       19,        view,           {.ui = ~0 } },
+	{ MODKEY|ShiftMask,             19,        tag,            {.ui = ~0 } },
+	{ MODKEY,                       59,        focusmon,       {.i = -1 } },      // comma
+	{ MODKEY,                       60,        focusmon,       {.i = +1 } },      // period
+	{ MODKEY|ShiftMask,             59,        tagmon,         {.i = -1 } },      // comma
+	{ MODKEY|ShiftMask,             60,        tagmon,         {.i = +1 } },      // period
+
+	{ MODKEY|ShiftMask,             44,        rotatetags,     {.i = -1 } },//n
+	{ MODKEY|ShiftMask,             45,        rotatetags,     {.i = +1 } },//e
+	{ MODKEY,                       20,        setgaps,        {.i = -1 } },//-
+	{ MODKEY,                       21,        setgaps,        {.i = +1 } },//=
+	{ MODKEY|ShiftMask,             21,        setgaps,        {.i = 0  } },//=
+	TAGKEYS(                10,                    0)                 // 1
+	TAGKEYS(                11,                    1)                 // 2
+	TAGKEYS(                12,                    2)                 // 3
+	TAGKEYS(                13,                    3)                 // 4
+	TAGKEYS(                14,                    4)                 // 5
+	TAGKEYS(                15,                    5)                 // 6
+	TAGKEYS(                16,                    6)                 // 7
+	TAGKEYS(                17,                    7)                 // 8
+	TAGKEYS(                18,                    8)                 // 9
+	{ MODKEY|ShiftMask,     24,    quit,           {0} },             // q
 };
 
 /* button definitions */
