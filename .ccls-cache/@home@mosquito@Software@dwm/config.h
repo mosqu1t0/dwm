@@ -12,11 +12,11 @@ static const char *fonts[]          = { "DejaVu Sans Mono:style=Regular:size=12"
 					"WenQuanYi Micro Hei Mono:size=12:type=Regular:antialias=true:autohint=true",
 					"Symbols Nerd Font:pixelsize=20:type=1000-em:antialias=true:autohint=true"};
 static const char dmenufont[]       = "DejaVu Sans Mono:style=Regular:size=12";
-static const char col_gray1[]       = "#111111";
+static const char col_gray1[]       = "#282828";
 static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#ffffff";
-static const char col_cyan[]        = "#374f42";
+static const char col_gray3[]       = "#ebdbb2";
+static const char col_gray4[]       = "#282828";
+static const char col_cyan[]        = "#83a598";
 static const unsigned int baralpha = 0xa0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
