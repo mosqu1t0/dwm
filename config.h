@@ -1,23 +1,23 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int borderpx  = 4;        /* border pixel of windows */
 static const unsigned int gappx     = 10;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
 
-static const char *fonts[]          = { "DejaVu Sans Mono:style=Regular:size=12",
+static const char *fonts[]          = { "JetBrains Mono:style=Bold:size=12",
 					"WenQuanYi Micro Hei Mono:size=12:type=Regular:antialias=true:autohint=true",
 					"Symbols Nerd Font:pixelsize=20:type=1000-em:antialias=true:autohint=true"};
-static const char dmenufont[]       = "DejaVu Sans Mono:style=Regular:size=12";
+static const char dmenufont[]       = "JetBrains Mono:style=Bold:size=12";
 static const char col_gray1[]       = "#282828";
-static const char col_gray2[]       = "#444444";
+static const char col_gray2[]       = "#282828";
 static const char col_gray3[]       = "#ebdbb2";
 static const char col_gray4[]       = "#282828";
 static const char col_cyan[]        = "#83a598";
-static const unsigned int baralpha = 0xa0;
+static const unsigned int baralpha = 0xd0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
@@ -31,7 +31,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "C", "D", "E", "F", "G", "A", "B", "", "" };
+static const char *tags[] = { "C", "D", "E", "F", "G", "A", "ﱘ", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):

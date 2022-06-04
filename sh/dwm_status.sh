@@ -44,6 +44,6 @@ do
     rx_pre="$rx_now"
     tx_pre="$tx_now"
 
-    xsetroot -name " :$rx Kbs 祝:$tx Kbs | $battery_st:$battery | $mute:$vol | $(date +"%A %m.%d %H:%M") "
+    xsetroot -name " :$rx Kbs 祝:$tx Kbs | $battery_st:$battery | $mute:$vol | $(date +"%a %m.%d %H:%M") "
     sleep 1
 done &

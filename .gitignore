@@ -1,3 +1,5 @@
 *.o
 GPUCache
 dwm
+
+.ccls-cache/@home@mosquito@Software@dwm
