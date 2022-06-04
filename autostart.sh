@@ -13,7 +13,8 @@ redshift -l 25.28:110.30 &
 wmname LG3D
 fcitx5 &
 
-signIn
 
-
+# app autostart
+alacritty --hold -e signIn &
+electron-qq &
 
