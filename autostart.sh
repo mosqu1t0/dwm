@@ -15,6 +15,8 @@ fcitx5 &
 
 
 # app autostart
-alacritty --hold -e signIn &
-electron-qq &
+
+
+alacritty --hold -e signIn 
+
 
