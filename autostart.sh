@@ -5,7 +5,7 @@
 /home/mosquito/Software/dwm/sh/dwm_status.sh
 
 # app autostart
-feh --bg-fill /home/mosquito/Pictures/gruv-pacman-ghosts.png
+feh --bg-fill /home/mosquito/Pictures/unnamed.jpg
 picom &
 redshift -l 25.28:110.30 &
 
