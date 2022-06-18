@@ -17,6 +17,9 @@ fcitx5 &
 # app autostart
 
 
-alacritty --hold -e signIn 
+/home/mosquito/Tools/key &
+electron-qq &
+telegram-desktop &
+alacritty --hold -e signIn &
 
 
