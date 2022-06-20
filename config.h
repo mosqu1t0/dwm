@@ -35,6 +35,9 @@ static const unsigned int alphas[][3]      = {
 	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
 };
 
+/* staticstatus */
+static const int statmonval = 0;
+
 /* tagging */
 static const char *tags[] = { "C", "D", "E", "F", "G", "A", "B", "ﱘ", "/" };
 
