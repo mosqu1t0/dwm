@@ -2,7 +2,7 @@
 
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
-static const unsigned int gappx     = 14;        /* gaps between windows */
+static const unsigned int gappx     = 26;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -39,7 +39,7 @@ static const unsigned int alphas[][3]      = {
 static const int statmonval = 0;
 
 /* tagging */
-static const char *tags[] = { "C", "D", "E", "F", "G", "A", "B", "ﱘ", "/" };
+static const char *tags[] = { "C", "D", "E", "F", "G", "A", "B", "ﱘ", "/" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -140,7 +140,7 @@ static Key keys[] = {
 	TAGKEYS(                16,                    6)                 // 7
 	TAGKEYS(                17,                    7)                 // 8
 	TAGKEYS(                18,                    8)                 // 9
-	{ MODKEY|ShiftMask,     24,    quit,           {0} },             // q
+	{ MODKEY|ShiftMask,     9,    quit,           {0} },             // ESC
 };
 
 /* button definitions */
