@@ -1,5 +1,6 @@
 /* See LICENSE file for copyright and license details. */
 
+
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 26;        /* gaps between windows */
@@ -140,7 +141,7 @@ static Key keys[] = {
 	TAGKEYS(                16,                    6)                 // 7
 	TAGKEYS(                17,                    7)                 // 8
 	TAGKEYS(                18,                    8)                 // 9
-	{ MODKEY|ShiftMask,     9,    quit,           {0} },             // ESC
+	{ MODKEY|ShiftMask,      9,    quit,           {0} },             // ESC
 };
 
 /* button definitions */

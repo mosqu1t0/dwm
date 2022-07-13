@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#
 
-/home/mosquito/Software/dwm/sh/dwm_status.sh
+
+/home/mosquito/Software/dwm/sh/dwm_status.sh &
 
 # app autostart
 feh --bg-fill /home/mosquito/Pictures/unnamed.jpg
@@ -16,10 +16,11 @@ fcitx5 &
 
 # app autostart
 
+# xrandr --output eDP --auto --output HDMI-A-0 --auto --same-as eDP
 
-/home/mosquito/Tools/key &
+/home/mosquito/Tools/key 
 electron-qq &
 telegram-desktop &
-alacritty --hold -e signIn &
+# alacritty --hold -e signIn &
 
 
