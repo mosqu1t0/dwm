@@ -8,7 +8,7 @@ tx_pre=$(cat /proc/net/dev | grep "$way" | awk -F' ' '{print $10}')
 
 while true
 do
-    if [ "$(cat /proc/net/dev | grep enp)" ]
+    if [ "$(ip address | grep enp | grep inet)" ]
     then
         way="enp"
     else
